@@ -1,14 +1,24 @@
+let menuIcon = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+let sections = document.querySelectorAll('secton');
+let navLinks = document.querySelectorAll('header nav a');
 
-const express = require('express');
-const path = require('path'); // Import the path module
+window.onscroll = () => {
+    sections.forEach(sec => {
+        let top = window.scrollY
+        let offset = sec.offestTop = 150;
+        let height = sec.offsetHeight;
+        let id = sec.getAttribute;
 
-const app = express();
-
-app.get("/", (req, res) => {
-    // Use path.join to construct the absolute path to your HTML file
-    res.sendFile(path.join(__dirname, 'index.html'));
-});
-
-app.listen(4000, () => {
-    console.log("Listening on port 3000");
-});
+        if(top >= offset && top < offset + height){
+            navLinks.forEach(linkes => {
+                linkes.classList.remove('active')
+                document.querySelector('header nav a [href*=' + id + ' ]').classlist.add('active')
+            })
+        }
+    })
+}
+menuIcon.onclick = () => {
+    menuIcon.classList.toggle('bx-x')
+    navbar.classList.toggle('active')
+}
