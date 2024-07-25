@@ -1,32 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <!-- ... (other head content) -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <title>Benjamin Shaar Piano Website</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     
-    <!-- Add a link to your YouTube channel -->
-    <link rel="me" href="https://www.youtube.com/channel/UCD1pzLGKs9-YMN4saJV56fQ">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#videos">Videos</a></li>
-                <li><a href="#bio">Bio</a></li>
-                <li><a href="#awards">Awards</a></li>
-            </ul>
+    <header class="header">
+        <a href="#home" class="logo">Benjamin
+        <span>Shaar</span></a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#videos">Videos</a>
+            <a href="#bio">Bio</a>
+            <a href="#awardsfestivals">Awards/Festivals</a>
         </nav>
+
     </header>
-    <section class="hero" id="home">
-        <h1>Benjamin Shaar</h1>
-        <p>Pianist</p>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1><span>Benjamin Shaar</span></h1>
+            <h3 class="text-animation"> <span></span></h3>
+            <p></p>
+
+            <div class="social-icons">
+                <a href="https://www.youtube.com/@benjaminshaar9083" target="_blank"><i class='bx bxl-youtube' ></i></a>
+            </div>
+            
+        </div>    
+            <div class="home-img">
+                <img src="Pianopic1.jpeg" alt="">
+            </div>
     </section>
-    <section class="content" id="videos">
-        <h2>Videos</h2>
+
+    <section class="videos" id="videos">
+        <h2 class="heading">Videos</h2>
         <div class="video-container">
             <div class="video-container">
                 <iframe
@@ -88,7 +105,7 @@
                 ></iframe>
             </div>
             
-            <div class "video-container">
+            <div class="video-container">
                 <iframe
                     width="560"
                     height="315"
@@ -117,35 +134,126 @@
                     allowfullscreen
                 ></iframe>
             </div>
-            
+    </section>
+    <section class="bio" id="bio">
+        <h2 class="heading">Bio</h2>
+        <p>Benjamin Shaar is a Senior residing in Newton, MA. He started his classical piano career at the age of 5 and is studying with Dr. Nilly Shilo. Ben has performed at numerous recitals and venues including Carnegie Hall, Boston Symphony Hall, and Jordan Hall. He is a five-time first-place winner of Bay State Competition, a winner of "From The Top" performing on NPR, a three-time winner of the American Fine Arts Festival, a two-time 3rd place winner at the NEPTA Competition, a recipient of the Nancy Oliva Award, 2nd prize at the Steinway Competition, winner of the American Association for Development of the Gifted and Talented International Young Musician Competition, and a 3rd prize winner at the Chopin International Competition.</p>
+        <div class="bio1-img">
+            <img src="Pianopic1.jpeg" alt="">
         </div>
     </section>
-    <section class="content" id="bio">
-        <h2>Bio</h2>
-        <p>Benjamin Shaar is a Senior residing in Newton, MA. He started his classical piano career at the age of 5 and is studying with Dr. Nilly Shilo. Ben has performed at numerous recitals and venues including Carnegie Hall, Boston Symphony Hall, and Jordan Hall. He is a five-time first-place winner of Bay State Competition, a winner of "From The Top" performing on NPR, a three-time winner of the American Fine Arts Festival, a two-time 3rd place winner at the NEPTA Competition, a recipient of the Nancy Oliva Award, 2nd prize at the Steinway Competition, winner of the American Association for Development of the Gifted and Talented International Young Musician Competition, and a 3rd prize winner at the Chopin International Competition.</p>
+    <section class="AwardsFestivals" id="awardsfestivals">
+        <h2 class="heading">Awards/Festivals</h2>
+        <div class="timline-items">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2015</div>
+                    <div class="timeline-content">
+                        <ul>
+                          <li>American Fine Arts Festival Winner</li> 
+                          <li>Preformed in Carnegie Hall</li> 
+                        </ul>
+                    </div>
+                
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2016</div>
+                    <div class="timeline-content">
+                        <ul>
+                            <li>First prize winner at the Bay State Competition</li>
+                        </ul>
+                    </div>
+                
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2017</div>
+                    <div class="timeline-content">
+                        <ul>
+                            <li>First prize winner at the Bay State Competition</li>
+                            <li>Third prize at the Chopin International Competition</li>
+                        </ul>
+                    </div>
+                
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2018</div>
+                    <div class="timeline-content">
+                        <ul>
+                            <li>American Fine Arts Festival Winner</li> 
+                            <li>Preformed in Carnegie Hall</li>
+                        </ul>
+                    </div>
+                
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2019</div>
+                    <div class="timeline-content">
+                        <ul>
+                            <li>Second Prize at the Steinway Competition</li> 
+                            <li>Preformed in Symphony Hall</li>
+                            <li>First prize winner at the Bay State Competition</li>
+                            <li>AADGT International Young Musician Compeititon</li>
+                        </ul>
+                    </div>
+                
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2020</div>
+                    <div class="timeline-content">
+                        <ul>
+                            <li>From The Top Winner</li> 
+                            <li>Preformed in Jordan Hall</li>
+                        </ul>
+                    </div>
+                
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2021</div>
+                    <div class="timeline-content">
+                        <ul>
+                            <li>First prize winner at the Bay State Competition</li> 
+                            <li>Third Prize at the NEPTA Competition</li>
+                        </ul>
+                    </div>
+                
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                    <div class="timeline-date">2022</div>
+                    <div class="timeline-content">
+                        <ul>
+                            <li>First prize winner at the Bay State Competition</li> 
+                            <li>Third Prize at the NEPTA Competition</li>
+                        </ul>
+                    </div>
+                
+            </div>
+        </div>
     </section>
-    <section class="content" id="awards">
-        <h2>Awards</h2>
-        <ul>
-            <li>Year: Award</li>
-            <section class="content" id="awards">
-                <h2>Awards</h2>
-                <ul>
-                    <li>From the Top winner (2020)</li>
-                    <li>5-time 1st place winner at the Bay State Competition (2016, 2017, 2019, 2021, 2022)</li>
-                    <li>2nd place at the Steinway Competition (2019)</li>
-                    <li>3rd place at the Chopin International competition (2017)</li>
-                    <li>2-time 3rd place at the NEPTA Competition (2021, 2022)</li>
-                    <li>Winner at the AADGT International Young Musician Competition (2019)</li>
-                    <li>3-time winner at the American Fine Arts Festival (2015, 2018)</li>
-                    <li>2-time 2nd place winner at the Russian Music Festival</li>
-                </ul>
-            </section>
-            
-        </ul>
-    </section>
-    <footer>
-        <p>&copy; 2023 Benjamin Shaar</p>
+
+    <footer class="footer">
+        <div class="social">
+            <a href="https://www.youtube.com/@benjaminshaar9083"><i class='bx bxl-youtube' ></i></a>
+        </div>
+
+        <p class="copyright">
+            © Benjamin Shaar | All Rights Reserved
+        </p>
     </footer>
+    <script src="app.js"></script>
+    
 </body>
 </html>
